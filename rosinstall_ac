@@ -19,10 +19,10 @@ sudo apt install python-rosdep
 sudo rosdep init
 rosdep update
 # Create a ROS Workspace
-mkdir -p ~/bot_catkin_ws/src
-cd ~/bot_catkin_ws/
+mkdir -p ~/bot_ws/src
+cd ~/bot_ws/
 catkin_make
 # source new setup file
-source ~/bot_catkin_ws/devel/setup.bash
+source ~/bot_ws/devel/setup.bash
 echo $ROS_PACKAGE_PATH
-echo "source $HOME/bot_catkin_ws/devel/setup.bash" >> ~/.bashrc
+echo "source $HOME/bot_ws/devel/setup.bash" >> ~/.bashrc
